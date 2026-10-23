@@ -1,6 +1,6 @@
 # 🌼 ng-daisy-date-picker
 
-> Modern Date & Range Picker for **Angular 21 & Angular 22+**, powered by **DaisyUI 5**, **Tailwind CSS**, and **date-fns**. Inspired by [NG-ZORRO Ant Design DatePicker](https://github.com/NG-ZORRO/ng-zorro-antd/tree/master/components/date-picker).
+> Modern Date & Range Picker for **Angular 21 & Angular 22+**, beautifully styled with **DaisyUI 5**, **Tailwind CSS**, and **date-fns**.
 
 ---
 
