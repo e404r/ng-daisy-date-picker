@@ -1,64 +1,108 @@
-# NgDaisyDatePicker
+# 🌼 ng-daisy-date-picker
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
+> Modern Date & Range Picker for **Angular 21 & Angular 22+**, beautifully styled with **DaisyUI 5**, **Tailwind CSS**, and **date-fns**.
 
-## Code scaffolding
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-success?style=for-the-badge&logo=github)](https://e404r.github.io/ng-daisy-date-picker/)
+[![npm version](https://img.shields.io/npm/v/ng-daisy-date-picker?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/ng-daisy-date-picker)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://github.com/e404r/ng-daisy-date-picker/blob/main/LICENSE)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+👉 **Interactive Live Demo:** [https://e404r.github.io/ng-daisy-date-picker/](https://e404r.github.io/ng-daisy-date-picker/)
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🌟 Features
 
-```bash
-ng generate --help
-```
+- **Angular 21 & Angular 22+ Ready**: Pure Standalone Components, Signal-friendly, built for the latest Angular ecosystem.
+- **DaisyUI 5 & Tailwind CSS**: Full theme support (`light`, `dark`, `synthwave`, `cyberpunk`, `emerald`, etc.), colors (`primary`, `secondary`, `accent`, `error`, etc.), and sizes (`sm`, `md`, `lg`).
+- **Single DatePicker (`<daisy-date-picker>`)**: Day, Month, Year, and Decade view drill-down navigation.
+- **Dual RangePicker (`<daisy-range-picker>`)**: Synchronized dual calendar panels with interactive continuous hover range preview.
+- **TimePicker Support**: Optional integrated column time selection (Hours, Minutes, Seconds).
+- **Quick Shortcuts & Presets**: Tag pills for Today, Yesterday, Last 7 Days, Last 30 Days, This Month, etc.
+- **Angular Forms Integration**: Implements `ControlValueAccessor` (`[(ngModel)]`, `formControl`, `formControlName`, validation errors).
+- **Flexible Positioning**: Uses `@angular/cdk/overlay` with viewport collision handling and z-index layering.
+- **Lightweight & Modular**: Powered by modular `date-fns` utilities.
 
-## Building
+---
 
-To build the library, run:
+## 📦 Compatibility
 
-```bash
-ng build ng-daisy-date-picker
-```
+| Package / Tool | Version Supported |
+| :--- | :--- |
+| **Angular** | **`^21.0.0` \|\| `^22.0.0` \|\| `>=21.0.0`** |
+| **Node.js** | `>= 20.19.0` (Angular 21: `>=22.12.0`, Angular 22: `>=22.22.3`) |
+| **Tailwind CSS** | `^4.0.0` or `^3.4.0` |
+| **DaisyUI** | `^5.0.0` or `^4.0.0` |
+| **date-fns** | `^3.0.0` \|\| `^4.0.0` |
 
-This command will compile your project, and the build artifacts will be placed in the `dist/` directory.
+---
 
-### Publishing the Library
-
-Once the project is built, you can publish your library by following these steps:
-
-1. Navigate to the `dist` directory:
-
-   ```bash
-   cd dist/ng-daisy-date-picker
-   ```
-
-2. Run the `npm publish` command to publish your library to the npm registry:
-   ```bash
-   npm publish
-   ```
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🚀 Installation
 
 ```bash
-ng test
+npm install ng-daisy-date-picker
+```
+*(Dependencies like `date-fns` and `@angular/cdk` are automatically installed by npm)*
+
+In your global styles (`styles.css`):
+
+```css
+@import "@angular/cdk/overlay-prebuilt.css";
+@import "tailwindcss";
+@plugin "daisyui";
 ```
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 💻 Quick Usage
 
-```bash
-ng e2e
+### 1. Single DatePicker
+
+```html
+<daisy-date-picker
+  [(ngModel)]="selectedDate"
+  color="primary"
+  size="md"
+  placeholder="Select date"
+/>
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+With Time Picker & Presets:
 
-## Additional Resources
+```html
+<daisy-date-picker
+  [(ngModel)]="dateTime"
+  [showTime]="true"
+  [presets]="[
+    { label: 'Today', value: today },
+    { label: 'Tomorrow', value: tomorrow }
+  ]"
+/>
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 2. Date Range Picker
+
+```html
+<daisy-range-picker
+  [(ngModel)]="dateRange"
+  [presets]="[
+    { label: 'Last 7 Days', value: last7Days },
+    { label: 'This Month', value: thisMonth }
+  ]"
+  [placeholder]="['Start date', 'End date']"
+/>
+```
+
+### 3. Reactive Forms
+
+```html
+<form [formGroup]="form">
+  <daisy-date-picker formControlName="birthDate" />
+  <daisy-range-picker formControlName="vacationPeriod" />
+</form>
+```
+
+---
+
+## 📄 License
+
+MIT © [e404r](https://github.com/e404r)

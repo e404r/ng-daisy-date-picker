@@ -1,6 +1,6 @@
 {
   "name": "ng-daisy-date-picker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DaisyUI-styled Date & Range Picker for Angular 21 & 22+",
   "author": "e404r (https://github.com/e404r)",
   "license": "MIT",
