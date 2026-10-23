@@ -1,7 +1,30 @@
 {
   "name": "ng-daisy-date-picker",
   "version": "0.1.0",
-  "description": "DaisyUI-styled Date & Range Picker for Angular",
+  "description": "DaisyUI-styled Date & Range Picker for Angular 21 & 22+",
+  "author": "e404r (https://github.com/e404r)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e404r/ng-daisy-date-picker.git"
+  },
+  "homepage": "https://github.com/e404r/ng-daisy-date-picker#readme",
+  "bugs": {
+    "url": "https://github.com/e404r/ng-daisy-date-picker/issues"
+  },
+  "keywords": [
+    "angular",
+    "daisyui",
+    "date-picker",
+    "datepicker",
+    "range-picker",
+    "calendar",
+    "tailwind",
+    "date-fns",
+    "ng-zorro",
+    "angular21",
+    "angular22"
+  ],
   "peerDependencies": {
     "@angular/common": "^21.0.0 || ^22.0.0 || >=21.0.0",
     "@angular/core": "^21.0.0 || ^22.0.0 || >=21.0.0",

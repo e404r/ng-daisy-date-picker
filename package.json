@@ -8,8 +8,17 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:lib": "ng build ng-daisy-date-picker",
+    "build:demo": "ng build demo",
+    "package:lib": "npm run build:lib && cd dist/ng-daisy-date-picker && npm pack",
+    "publish:lib": "npm run build:lib && cd dist/ng-daisy-date-picker && npm publish --access public",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
+  },
+  "author": "e404r (https://github.com/e404r)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e404r/ng-daisy-date-picker.git"
   },
   "prettier": {
     "printWidth": 100,
