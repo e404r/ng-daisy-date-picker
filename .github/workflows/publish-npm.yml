@@ -31,6 +31,13 @@ jobs:
         run: npm run build:lib
 
       - name: Publish to NPM
-        run: cd dist/ng-daisy-date-picker && npm publish --access public
+        run: |
+          if [ -z "$NPM_TOKEN" ]; then
+            echo "ERROR: NPM_TOKEN secret is empty or not set in GitHub repository settings!"
+            exit 1
+          fi
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+          cd dist/ng-daisy-date-picker
+          npm publish --access public --//registry.npmjs.org/:_authToken="${NPM_TOKEN}"
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
