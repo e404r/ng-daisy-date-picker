@@ -1,0 +1,16 @@
+{
+  "name": "ng-daisy-date-picker",
+  "version": "0.1.0",
+  "description": "DaisyUI-styled Date & Range Picker for Angular",
+  "peerDependencies": {
+    "@angular/common": "^21.0.0 || ^22.0.0 || >=21.0.0",
+    "@angular/core": "^21.0.0 || ^22.0.0 || >=21.0.0",
+    "@angular/forms": "^21.0.0 || ^22.0.0 || >=21.0.0",
+    "@angular/cdk": "^21.0.0 || ^22.0.0 || >=21.0.0",
+    "date-fns": "^3.0.0 || ^4.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

@@ -1,0 +1,22 @@
+@import "@angular/cdk/overlay-prebuilt.css";
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Custom animations & subtle enhancements for DatePicker overlay */
+.daisy-picker-overlay-pane {
+  animation: daisyPickerFadeIn 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-box, 0.75rem);
+  z-index: 1000;
+}
+
+@keyframes daisyPickerFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
