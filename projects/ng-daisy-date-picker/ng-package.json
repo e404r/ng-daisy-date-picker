@@ -3,5 +3,8 @@
   "dest": "../../dist/ng-daisy-date-picker",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "allowedNonPeerDependencies": [
+    "date-fns"
+  ]
 }

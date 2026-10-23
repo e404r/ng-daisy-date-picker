@@ -39,8 +39,9 @@
 ## 🚀 Installation
 
 ```bash
-npm install ng-daisy-date-picker @angular/cdk date-fns
+npm install ng-daisy-date-picker
 ```
+*(Dependencies like `date-fns` and `@angular/cdk` are automatically installed by npm)*
 
 In your global styles (`styles.css`):
 
