@@ -2,6 +2,12 @@
 
 > Modern Date & Range Picker for **Angular 21 & Angular 22+**, beautifully styled with **DaisyUI 5**, **Tailwind CSS**, and **date-fns**.
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-success?style=for-the-badge&logo=github)](https://e404r.github.io/ng-daisy-date-picker/)
+[![npm version](https://img.shields.io/npm/v/ng-daisy-date-picker?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/ng-daisy-date-picker)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+
+👉 **Interactive Live Demo:** [https://e404r.github.io/ng-daisy-date-picker/](https://e404r.github.io/ng-daisy-date-picker/)
+
 ---
 
 ## 🌟 Features
