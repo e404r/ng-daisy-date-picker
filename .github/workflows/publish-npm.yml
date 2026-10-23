@@ -40,4 +40,4 @@ jobs:
           cd dist/ng-daisy-date-picker
           npm publish --access public --//registry.npmjs.org/:_authToken="${NPM_TOKEN}"
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN || vars.NPM_TOKEN }}
